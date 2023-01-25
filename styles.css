@@ -1,0 +1,272 @@
+*{padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Sofia Sans', sans-serif;
+    }
+    
+    @media only screen and (max-width: 600px) {
+      .text-with-images {
+        grid-template-columns: 1fr;
+      }
+    }
+    
+    /*NAV START*/
+    .nav{
+      display: flex;
+      align-items: center;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      justify-content: space-between;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      padding-left: 8%;
+      padding-right: 8%;
+      background-color: #00001a;
+    }
+    
+    .logo{color: white;
+    font-size: 35px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    margin-right: 100px;}
+    
+    span{color:red}
+    
+    nav ul li{list-style-type: none;
+    display: inline-block;
+    padding: 10px 25px;
+    }
+    
+    nav ul li a{color: white;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-weight: bold;
+    }
+    
+    nav ul li a:hover{color: red;
+    transition: .4s;}
+    
+    .btn{color: white;
+    background-color: red;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 10px 25px;
+    border-radius: 30px;
+    transition: transform .4s;}
+    
+    .btn:hover{transform: scale(1.2);}
+    
+    a{list-style-type: none;
+      text-decoration: none;}
+    /*NAV END*/
+    
+    /*WELCOME SECTION STARTS*/
+    .welcome{display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background: rgb(2,1,17);
+    background: linear-gradient(0deg, rgba(2,1,17,1) 0%, rgba(18,8,73,1) 57%, rgba(8,29,84,1) 100%);
+    }
+    
+    h1{font-size: 5rem;
+    font-family: raleway;
+    color: white;}
+
+    h1 span{font-family: raleway;}
+    
+    .welcome p{font-size: 2rem;
+    color: red;}
+    /*WELCOME SECTION END*/
+    
+    /*ABOUTME SECTION STARTS*/
+    .about{width: 100%;
+    padding: 100px 0;
+    background: #1e1e2f}
+    
+    img{height: 500px;
+    width: 500px;
+    object-fit: cover;
+    }
+    
+    .about-text{
+    width: 550px;}
+    
+    .main{width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    }
+    
+    .about-text h2{color: white;
+    font-size: 75px;
+    margin-bottom: 20px;
+    font-family: raleway;}
+    
+    .about-text h2 span{font-family: raleway;}
+    
+    .about-text p{color: #fcfc;
+    letter-spacing: 1px;
+    line-height: 28px;
+    margin-bottom: 20px;}
+    /*ABOUTME SECTION END*/
+    
+    /*CERTIFICATES START*/
+    .certificates{background-color: #101010;
+    width: 100%;
+    padding: 100px 0px;}
+    
+    .title h2{color: white;
+    font-size: 75px;
+    width: 1130px;
+    margin: 30px auto;
+    text-align: center;
+    font-family: raleway;}
+    
+    .title h2 span{font-family: raleway;}
+    
+    .box{display: grid;
+    grid-template-columns: repeat(3, 400px);
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;}
+    
+    .card{height: 365px;
+    width: 400px;
+    padding: 10px 5px;
+    background-color: #191919;
+    border-radius: 15px;
+    margin: 15px;
+    text-align: center;
+    border: solid #ff6666;
+    box-shadow: 0px 0px 10px #ff6666;
+    }
+    
+    .img img{object-fit: cover;
+    width: 370px;
+    height: 250px;
+    }
+    
+    .img img:hover{
+    transform: scale(1.3);
+    transition: .3s;
+    transition-timing-function: linear;
+    cursor: pointer;
+    }
+    
+    .card i{font-size: 50px;
+    display: block;
+    text-align: center;
+    margin: 5px 0px;
+    color: red;}
+    
+    h5{color: white;
+    font-size: 20px;
+    margin-bottom: 5px;}
+    /*CERTIFICATES END*/
+    
+    /*PROJECT START*/
+    .project-section{text-align: center;
+    padding: 10rem 2rem;
+    background: #1e1e2f}
+    
+    .project-section h2{font-size: 75px;
+    font-family: raleway;
+    color: white;
+    margin-bottom: 30px;
+    }
+    
+    .project-section h2 span{font-family: raleway;}
+    
+    .grid-projects{display: grid;
+    grid-template-columns: repeat(3, 400px);
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;}
+    
+    .project-tile{height: 365px;
+    width: 400px;
+    padding: 5px 5px;
+    background-color: #191919;
+    margin: 15px;
+    border-radius: 15px;
+    text-align: center;
+    border: solid #ff6666;
+    box-shadow: 0px 0px 10px #ff6666;}
+    
+    .project-tile img{object-fit: cover;
+    width: 370px;
+    height: 250px;
+    margin-top: 5px;}
+
+    .project-tile img:hover{
+    transform: scale(1.3);
+    transition: .3s;
+    transition-timing-function: linear;
+    cursor: pointer;}
+    
+    .project-tile p{color:white;
+    font-weight: bold;
+    font-size: 30px;
+    margin-top: 0}
+    
+    .project-tile i{display: block;
+    color: red;
+    font-size: 50px;
+    margin-top: 5px;
+    }
+    /*PROJECT END*/
+    
+    /*CONTACT START*/
+    .contact{display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 60vh;
+    background-color: #101010;
+    }
+    
+    .contact h2{color: white;
+    font-size: 75px;
+    font-family: raleway;
+    margin-bottom: 20px;}
+    
+    .contact h2 span{font-family: raleway;}
+    
+    .contact-links{display: flex;
+    justify-content: center;}
+    
+    .contact-links a{margin-right: 25px;
+    font-size: 30px;
+    color: white}
+    
+    .contact-links a i{margin-right: 5px;
+    color: red}
+    
+    .contact-links i{margin-right: 25px;
+    font-size: 30px}
+    
+    .contact-links a:hover{transform: scale(1.2);}
+    
+    .contact-info{display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    align-items: center}
+    
+    .contact-info i{margin-right: 5px;
+    font-size: 30px;
+    color: red}
+    
+    .number-email{font-size: 30px;
+    color: white;}
